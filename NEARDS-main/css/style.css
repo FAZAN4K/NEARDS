@@ -11,15 +11,13 @@ body{
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); 
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
+
 .main-header{
     background-color: #eeee;
 }
@@ -40,6 +38,11 @@ body{
     list-style: none;
 }
 
+.user-item a{
+    text-decoration: none;
+    color: black;
+}
+
 .navigation-item{
     margin-right: 45px;
 }
@@ -55,4 +58,66 @@ body{
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.slider{
+    background-color: #eeee;
+}
+.slider-item{
+    padding: 80px 0;
+}
+
+.slider-title{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+.slider-text{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+    color: white;    
+    background: #FB565A;
+    border-radius: 3px;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn_big{
+    padding: 15px 50px;
+}
+
+.slider-item1{
+    background-image: url(../img/nerds-index-slide1\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+
+
+.slider--wrapper{
+    width: 540px;
+
+}
+.services{
+    padding: 80px 0 80px 0;
+
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.services-item{
+    width: 300px;
 }
